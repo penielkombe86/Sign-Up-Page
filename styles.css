@@ -1,0 +1,81 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    width: 100%;
+}
+
+html {
+    font-size:  100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffff;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+.sign-up-card {
+    display: flex;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+.product-image, .sign-up-form {
+    display: flex;
+    flex: 1
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-container{
+    display: flex;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-input {
+    margin-right: 1.5rem;
+}
+
+.btn-wrapper {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}

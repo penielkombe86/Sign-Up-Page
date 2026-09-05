@@ -9,11 +9,14 @@
 <body>
     <article class="sign-up-card">
         <div class="product-image">
-            <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="product image">
-            <img src="./images/Odin-logo.png" alt="Odin logo" width="100px" height="100px">
+            <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="product image" class="bg-image">
+            <div class="logo-wrapper">
+                <img src="./images/Odin-logo.png" alt="Odin logo" id="odin-logo">
+                <span class="logo-text">ODIN</span>
+            </div>
         </div>
         <div class="sign-up-form">
-            <div>
+            <div class="intro-text">
                 <p>
                     This is not a real online service! You know you need something
                     like this in your life to help you realize you deepest dreams.
@@ -28,7 +31,7 @@
                     <div class="input-container">
                         <div class="input-wrapper left-input">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" for="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name">
                         </div>
 
                         <div class="input-wrapper">
@@ -64,8 +67,9 @@
                     <div class="btn-wrapper">
                         <button id="account-btn">Create Account</button>
                     </div>
-                    <div>
-                        <p>Already have an account? Log in</p>
+
+                    <div class="login-prompt">
+                        <p>Already have an account? <a href="#">Log in</a></p>
                     </div>
                 </form>
 

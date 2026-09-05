@@ -32,8 +32,12 @@ input, button, textarea, select {
 
 .sign-up-card {
     display: flex;
-    max-width: 800px;
-    min-width: 300px;
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffff;
+    box-shadow: 0 10px 25px rgba(0,0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .product-image, .sign-up-form {
@@ -43,18 +47,35 @@ input, button, textarea, select {
 
 .product-image {
     position: relative;
+    flex: 1 1 350px;
+
 }
 
-.product-image img {
+.bg-image {
+    width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    top: 20%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    gap: 0.5rem;
 }
 
 .sign-up-form {
     display: flex;
     flex-direction: column;
-    padding: 2.5rem;
+    padding: 3rem;
+    justify-content: center;
+    flex: 2 1 500px;
+    gap: 1.5rem;
 }
 
 .card-info {
@@ -64,18 +85,77 @@ input, button, textarea, select {
 
 .input-container{
     display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .input-wrapper {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
-.left-input {
-    margin-right: 1.5rem;
+.input-wrapper label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
 }
+
+.input-wrapper input {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-wrapper input:focus {
+    border-color: #596d48;
+    box-shadow: 0 0 0 2px rgba(89, 109, 72, 0.2)
+}
+
+
 
 .btn-wrapper {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+#account-btn {
+    background-color: #596d48;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+#odin-logo {
+    width: 60px;
+    height: auto;
+}
+
+.logo-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.login-prompt p {
+    font-size: 0.9rem;
+}
+
+.login-prompt a {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: bold;
 }
